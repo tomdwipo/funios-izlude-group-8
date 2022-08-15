@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SettingsTableViewCell" customModule="Introduction" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text.book.closed.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ziO-RP-lHg">
+                        <rect key="frame" x="16" y="35" width="30" height="30"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="fwX-bD-3Z2"/>
+                            <constraint firstAttribute="height" constant="30" id="zTU-tO-M13"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0mP-FD-n9o">
+                        <rect key="frame" x="291.5" y="42" width="12.5" height="16.5"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLH-jm-G2T">
+                        <rect key="frame" x="145" y="42" width="31" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ziO-RP-lHg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="9a4-Cx-32J"/>
+                    <constraint firstAttribute="bottom" secondItem="ziO-RP-lHg" secondAttribute="bottom" constant="35" id="J1N-rK-mno"/>
+                    <constraint firstItem="lLH-jm-G2T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="42" id="RrB-Pz-Z9d"/>
+                    <constraint firstAttribute="trailing" secondItem="0mP-FD-n9o" secondAttribute="trailing" constant="16" id="gVA-L0-wrD"/>
+                    <constraint firstItem="lLH-jm-G2T" firstAttribute="leading" secondItem="ziO-RP-lHg" secondAttribute="trailing" constant="99" id="h5u-2q-Cmg"/>
+                    <constraint firstAttribute="bottom" secondItem="lLH-jm-G2T" secondAttribute="bottom" constant="42" id="koy-gl-l9I"/>
+                    <constraint firstItem="0mP-FD-n9o" firstAttribute="leading" secondItem="lLH-jm-G2T" secondAttribute="trailing" constant="115.5" id="qKe-TV-Tz6"/>
+                    <constraint firstItem="ziO-RP-lHg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="shw-re-mTk"/>
+                    <constraint firstItem="0mP-FD-n9o" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wod-PI-1mb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="text.book.closed.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
