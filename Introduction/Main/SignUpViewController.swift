@@ -11,7 +11,7 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+print("test")
         // Do any additional setup after loading the view.
     }
 
@@ -23,7 +23,10 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signinTap(_ sender: Any) {
-        print("sign in")
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
     
 }
