@@ -92,7 +92,6 @@
         <!--Sign Up View Controller-->
         <scene sceneID="gPt-dC-FP1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2em-Ub-Dqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SignUpViewController" id="Or0-ma-yrh" customClass="SignUpViewController" customModule="Introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FOj-rY-EvJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -176,6 +175,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2em-Ub-Dqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1142.0289855072465" y="-12.053571428571429"/>
         </scene>
