@@ -23,10 +23,12 @@ print("test")
     }
     
     @IBAction func signinTap(_ sender: Any) {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+        self.navigationController?.popViewController(animated: true)
+//        self.presentingViewController?.dismiss(animated: true)
+    }
+    
+    deinit {
+        print(String(describing: self))
     }
     
 }
